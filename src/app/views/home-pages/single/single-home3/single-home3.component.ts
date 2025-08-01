@@ -21,9 +21,9 @@ export class SingleHome3Component implements OnInit, OnDestroy {
     private faviconService = inject(FaviconService)
 
     ngOnInit(): void {
-        this.faviconService.setFavicon('assets/img/logo/fav-logo3.png');
+        this.faviconService.setFavicon('assets/img/logo/favicon.ico');
     }
     ngOnDestroy(): void {
-        this.faviconService.setFavicon('assets/img/logo/fav-logo1.png');
+        this.faviconService.setFavicon('assets/img/logo/favicon.ico');
     }
 }

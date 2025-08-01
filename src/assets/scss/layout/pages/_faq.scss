@@ -22,7 +22,7 @@
        .accordion-item {
         border: none;
         padding: 0;
-        background: var(--ztc-bg-bg-9);
+        background: #151bbc;
         border-radius: 10px;
         h2 {
             button {
@@ -58,7 +58,7 @@
                     text-align: center;
                     line-height: 32px;
                     border-radius: 50%;
-                    background: var(--ztc-bg-bg-9);
+                    background: #151bbc;
                     right: 10px;
                     top: 12px;
                     @media #{$xs} {

@@ -164,7 +164,7 @@
         background: var(--ztc-bg-bg-1);
         color: var(--ztc-text-text-9);
         &::after {
-            background: var(--ztc-bg-bg-9);
+            background: #151bbc;
             opacity: 10%;
         }
         &:hover {
@@ -262,7 +262,7 @@
   height: 30px;
   border-radius: 25px;
   position: relative;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   left: -20px;
 }
 

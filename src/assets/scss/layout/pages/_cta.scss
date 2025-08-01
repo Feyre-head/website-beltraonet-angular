@@ -262,7 +262,7 @@
     z-index: 2;
     margin-bottom: -170px;
     .cta-bg-area {
-        background: var(--ztc-bg-bg-9);
+        background: #151bbc;
         overflow: hidden;
         padding: 70px;
         border-radius: 8px;
@@ -292,7 +292,7 @@
                     background: var(--ztc-bg-bg-1);
                     color: var(--ztc-text-text-9);
                     &::after {
-                        background: var(--ztc-bg-bg-9);
+                        background: #151bbc;
                         opacity: 10%;
                     }
                     &:hover {

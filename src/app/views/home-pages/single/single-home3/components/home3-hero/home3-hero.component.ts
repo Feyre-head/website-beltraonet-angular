@@ -10,17 +10,11 @@ import { Component } from '@angular/core';
 })
 export class Home3HeroComponent {
     socialIcons = [
-        'assets/img/icons/s-icon1.svg',
-        'assets/img/icons/s-icon2.svg',
+        'assets/img/icons/s-icon1.svg',        
         'assets/img/icons/s-icon3.svg',
         'assets/img/icons/s-icon4.svg',
         'assets/img/icons/s-icon5.svg',
-        'assets/img/icons/s-icon6.svg',
-        'assets/img/icons/s-icon7.svg',
-        'assets/img/icons/s-icon8.svg',
-        'assets/img/icons/s-icon9.svg',
-        'assets/img/icons/s-icon10.svg',
-        'assets/img/icons/s-icon11.svg'
+        
     ];
 
 }

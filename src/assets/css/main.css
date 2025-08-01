@@ -1264,7 +1264,7 @@ Location:
   transition: all 0.4s;
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   padding: 20px 26px;
   display: inline-block;
   border-radius: 8px;
@@ -7939,7 +7939,7 @@ Location:
   transition: all 0.4s;
   left: 0;
   bottom: 0;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   z-index: 1;
 }
 .homepage3-body .vl-main-menu ul > li .sub-menu li a:hover::after {
@@ -8087,7 +8087,7 @@ Location:
   transition: all 0.4s;
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   padding: 20px 26px;
   display: inline-block;
   border-radius: 8px;
@@ -8461,7 +8461,7 @@ Location:
   width: 10px;
   left: 50%;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   top: 0;
   visibility: hidden;
   opacity: 0;
@@ -8499,7 +8499,7 @@ Location:
   display: inline-block;
   transition: all 0.4s;
   border-radius: 50%;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
 }
 .works3-section-area .works-single-boxarea .icons img {
   filter: brightness(0) invert(1);
@@ -9090,7 +9090,7 @@ Location:
   color: var(--ztc-text-text-9);
 }
 .others3-section-area .others-heading .btn-area1 a::after {
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   opacity: 10%;
 }
 .others3-section-area .others-heading .btn-area1 a:hover {
@@ -9183,7 +9183,7 @@ Location:
   height: 30px;
   border-radius: 25px;
   position: relative;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   left: -20px;
 }
 .pricingplan1-section-area .t-year h4 {
@@ -9727,7 +9727,7 @@ Location:
 .faq3-section-area .faq-accordion-area .accordion-item {
   border: none;
   padding: 0;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   border-radius: 10px;
 }
 .faq3-section-area .faq-accordion-area .accordion-item h2 button {
@@ -9766,7 +9766,7 @@ Location:
   text-align: center;
   line-height: 32px;
   border-radius: 50%;
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   right: 10px;
   top: 12px;
 }
@@ -10493,7 +10493,7 @@ Location:
   margin-bottom: -170px;
 }
 .cta3-section-area .cta-bg-area {
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   overflow: hidden;
   padding: 70px;
   border-radius: 8px;
@@ -10527,7 +10527,7 @@ Location:
   color: var(--ztc-text-text-9);
 }
 .cta3-section-area .cta-bg-area .cta-header .btn-area1 a::after {
-  background: var(--ztc-bg-bg-9);
+  background: #151bbc;
   opacity: 10%;
 }
 .cta3-section-area .cta-bg-area .cta-header .btn-area1 a:hover {
