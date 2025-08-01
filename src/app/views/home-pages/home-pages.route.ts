@@ -6,7 +6,7 @@ export const HOME_PAGES_ROUTES: Routes = [
     {
         path: 'single-home-3',
         component: SingleHome3Component,
-        data: { title: "Single Home 3" }
+        data: { title: "Beltrãonet" }
     }    
 ];
 

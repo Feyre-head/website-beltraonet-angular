@@ -34,7 +34,7 @@ export class AppComponent implements OnInit{
         .subscribe(data => {
             if (data['title']) {
                 this.titleService.setTitle(data['title'] +
-                    ' | Eitech - Technology & It Solutions Services');
+                    ' Telecom');
             }
         });
    }
