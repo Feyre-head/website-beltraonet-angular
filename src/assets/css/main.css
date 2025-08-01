@@ -660,9 +660,10 @@ Location:
 
 .heading2 h5 {
   background: var(--Main-Color, linear-gradient(90deg, #2E0797 0%, #726EFC 100%));
-  background-clip: text;
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
@@ -901,9 +902,10 @@ Location:
 
 .heading6 h5 {
   background: linear-gradient(90deg, #202CD3 1.1%, #0778F9 100%);
-  background-clip: text;
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
@@ -4541,8 +4543,16 @@ Location:
   transition: 0.3s;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
+
+  /* Firefox */
   scrollbar-width: none;
 }
+
+/* Chrome, Edge, Safari, etc. */
+.vl-offcanvas::-webkit-scrollbar {
+  display: none;
+}
+
 @media only screen and (max-width: 450px) {
   .vl-offcanvas {
     width: 100%;

@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scrollbar-width",
+          "-webkit-text-size-adjust",
+          "-webkit-overflow-scrolling",
+          "color-adjust"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not chrome <= 112",
+    "not ios_saf <= 18.5",
+    "not safari <= 18.5",
+    "not samsung <= 28"
+  ]
+}

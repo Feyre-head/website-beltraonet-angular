@@ -76,9 +76,9 @@
 .heading2 {
     h5 {
         background: var(--Main-Color, linear-gradient(90deg, #2E0797 0%, #726EFC 100%));
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
         font-family: var(--ztc-family-font1);
         font-size: var(--ztc-font-size-font-s18);
         font-style: normal;
@@ -304,10 +304,10 @@
 
 .heading6 {
     h5 {
-        background: linear-gradient(90deg, #202CD3 1.1%, #0778F9 100%);
-        background-clip: text;
+        background: linear-gradient(90deg, #202CD3 1.1%, #0778F9 100%);        
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
         font-family: var(--ztc-family-font1);
         font-size: var(--ztc-font-size-font-s18);
         font-style: normal;
