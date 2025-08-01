@@ -29,32 +29,30 @@ export class FooterComponent {
 
     footerLinks: FooterSection[] = [
         {
-            title: 'Quick Links',
+            title: 'Links Rápidos',
             items: [
-                { label: 'About Us', link: '/pages/about' },
-                { label: 'It Solution', link: '/services' },
-                { label: 'Our Blog', link: '/blogs/one' },
-                { label: 'Pricing Plan' },
-                { label: 'Contact Us', link: '/pages/contact' },
+                { label: 'Acesso', link: '/pages/about' },
+                { label: 'Segunda via do boleto', link: '/services' },
+                { label: 'Contrato', link: '/blogs/one' },
+                { label: 'Contrato com valor adicionado' },                
             ],
         },
         {
             title: 'Our Services',
             items: [
-                { label: 'Cyber Security Solution' },
-                { label: 'Scalable Cloud Solutions' },
-                { label: 'Data Protection Services' },
-                { label: 'Optimization Management' },
-                { label: 'Software Development' },
+                { label: 'Termos de uso' },
+                { label: 'Política de privacidade' },   
+                { label: 'Fale conosco', link: '/pages/contact' }            
             ],
         },
         {
-            title: 'Contact Us',
+            title: 'Fale com a Gente',
             items: [
-                { label: '+1 123 456 7890', link: 'tel:+11234567890', icon: 'assets/img/icons/phn1.svg' },
-                { label: '421 Allen, Mexico 4233', icon: 'assets/img/icons/location1.svg' },
-                { label: 'eitechsolution@com', link: 'mailto:eitechsolution@com', icon: 'assets/img/icons/email1.svg' },
-                { label: 'eitechsolution.com', icon: 'assets/img/icons/global1.svg' },
+                { label: '+(46) 3520-1500', link: 'tel:+554635201500', icon: 'assets/img/icons/phn1.svg' },
+                { label: '+0800 649 5000 ', link: 'tel:+5508006495000 ', icon: 'assets/img/icons/phn1.svg' },
+                { label: 'Rua Florianópolis, 433', icon: 'assets/img/icons/location1.svg' },
+                { label: 'contato@beltraonet.com.br', link: 'mailto:eitechsolution@com', icon: 'assets/img/icons/email1.svg' },
+                { label: 'www.beltraonet.com.br', link: '/', icon: 'assets/img/icons/global1.svg' },
             ],
         },
     ];

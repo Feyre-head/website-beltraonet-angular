@@ -16,10 +16,30 @@ export class Home3PricingComponent {
     plans: PricingPlanType[] = [
         {
             name: '90 Mega',
-            monthlyPrice: 49,
-            yearlyPrice: 99,
+            monthlyPrice: 49,            
             downloadSpeed: '90 Mega de Download',
             uploadSpeed: '90 Mega de Upload',            
+            features: ['Sem Taxa de Instalação'],
+        },  
+        {
+            name: '350 Mega',
+            monthlyPrice: 49,            
+            downloadSpeed: '350 Mega de Download',
+            uploadSpeed: '350 Mega de Upload',            
+            features: ['Sem Taxa de Instalação'],
+        },  
+        {
+            name: '650 Mega',
+            monthlyPrice: 49,            
+            downloadSpeed: '650 Mega de Download',
+            uploadSpeed: '650 Mega de Upload',            
+            features: ['Sem Taxa de Instalação'],
+        },  
+        {
+            name: '720 Mega',
+            monthlyPrice: 49,            
+            downloadSpeed: '720 Mega de Download',
+            uploadSpeed: '720 Mega de Upload',            
             features: ['Sem Taxa de Instalação'],
         },        
     ];

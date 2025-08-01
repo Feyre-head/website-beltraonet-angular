@@ -50,7 +50,6 @@ export type BlogType = {
 export type PricingPlanType = {
     name: string;
     monthlyPrice: number;
-    yearlyPrice: number;
     downloadSpeed: string; 
     uploadSpeed: string;
     features: string[];
