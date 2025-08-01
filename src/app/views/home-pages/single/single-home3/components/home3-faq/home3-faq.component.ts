@@ -14,24 +14,24 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 export class Home3FaqComponent {
     faqs: FaqType[] = [
         {
-            question: 'How do I contact the Help Desk?',
-            answer: 'Yes, you can request a callback through our Support Portal or by sending an email contact information and preferred time for a call. We’ll do our best to accommodate request.'
+            question: 'Como entro em contato com o suporte da Beltraonet?',
+            answer: 'Ligue para 0800 649 5000 ou (46) 3520‑1500 (das 8h às 20h todos os dias) ou escreva para contato@beltraonet.com.br'
         },
         {
-            question: 'Can I request a callback from Help Desk?',
-            answer: 'Yes, you can request a callback through our Support Portal or by sending an email contact information and preferred time for a call. We’ll do our best to accommodate request.'
+            question: 'Posso solicitar um retorno de chamada?',
+            answer: 'Sim. você pode deixar seu telefone ao enviar um e-mail, a equipe pode retornar a ligação para resolver a solicitação.'
         },
         {
-            question: 'How long will it take to get a response?',
-            answer: 'Yes, you can request a callback through our Support Portal or by sending an email contact information and preferred time for a call. We’ll do our best to accommodate request.'
+            question: 'Quanto tempo demora para receber uma resposta?',
+            answer: 'As ligações e mensagem através do WhatsApp são atendidas das 8h às 20h, e mensagens por e‑mail costumam ser respondidas no mesmo dia.'
         },
         {
-            question: 'What the Help Desk’s hours of operation?',
-            answer: 'Yes, you can request a callback through our Support Portal or by sending an email contact information and preferred time for a call. We’ll do our best to accommodate request.'
+            question: 'Quais são os horários de funcionamento do suporte?',
+            answer: 'O atendimento telefônico funciona todos os dias, das 8h às 20h beltraonet.com.br; fora desse período, você pode enviar e‑mail.'
         },
         {
-            question: 'Can I track the status of support request?',
-            answer: 'Yes, you can request a callback through our Support Portal or by sending an email contact information and preferred time for a call. We’ll do our best to accommodate request.'
+            question: 'Posso acompanhar o status de uma solicitação de suporte?',
+            answer: 'Sim. Os assinantes têm acesso à Área do Cliente no site da Beltraonet, onde é possível consultar boletos e acompanhar solicitações de suporte. Para isso, acesse o portal da empresa e faça login na Central do Assinante (se ainda não tiver cadastro, é necessário criar um).'
         }
     ];
 
