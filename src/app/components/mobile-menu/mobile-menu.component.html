@@ -1,0 +1,146 @@
+<div [class]="mobileMenuClass">
+    <div class="vl-offcanvas" [ngClass]="{ 'vl-offcanvas-open': isMobileMenuOpen }">
+        <div class="vl-offcanvas-wrapper">
+            <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+                <div class="vl-offcanvas-logo">
+                    <a routerLink="/home-1"><img src="assets/img/logo/logo1.png" alt=""></a>
+                </div>
+                <div class="vl-offcanvas-close">
+                    <button class="vl-offcanvas-close-toggle" (click)="toggleMobileMenu()"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <div class="vl-offcanvas-menu d-lg-none mb-40">
+                <nav>
+                    <ul>
+                        @for (item of megaMenu; track $index) {
+                        <li class="has-dropdown" [ngClass]="{ 'active': menuOpen }">
+                            <a href="javascript:void(0);" (click)="toggleMenu()">Home
+                            </a>
+
+                            <div class="vl-mega-menu" [ngStyle]="{ 'display': menuOpen ? 'block' : 'none' }">
+                                <div class="vl-home-menu">
+                                    <div class="row gx-3 row-cols-1 row-cols-md-1 row-cols-lg-5">
+                                        @for (item of item.subMenu; track $index) {
+                                        <div class="col">
+                                            <div class="vl-home-thumb">
+                                                <div class="img1">
+                                                    <img [src]="item.image" [alt]="">
+                                                </div>
+                                                <a [routerLink]="item.title">{{item.title}} </a>
+                                                <div class="btn-area1">
+                                                    <a [routerLink]="item.link" [class]="themeBtn">
+                                                        <ng-container *ngIf="arrow2; else multiPageSpan">Multi
+                                                            page</ng-container>
+                                                        <ng-template #multiPageSpan><span class="demo">Multi
+                                                                Page</span></ng-template>
+
+                                                        @if (arrow) {
+                                                        <span class="arrow"><i
+                                                                class="fa-solid fa-arrow-right"></i></span>
+                                                        }
+                                                        @if (arrow2) {
+                                                        <span class="arrow1"><i
+                                                                class="fa-solid fa-arrow-right"></i></span>
+                                                        <span class="arrow2"><i
+                                                                class="fa-solid fa-arrow-right"></i></span>
+                                                        }
+                                                    </a>
+                                                    <div class="space16"></div>
+
+                                                    <a [routerLink]="item.singleLink" [class]="themeBtn">
+                                                        <ng-container *ngIf="arrow2; else onePageSpan">One
+                                                            page</ng-container>
+                                                        <ng-template #onePageSpan><span class="demo">One
+                                                                Page</span></ng-template>
+                                                        @if (arrow) {
+                                                        <span class="arrow"><i
+                                                                class="fa-solid fa-arrow-right"></i></span>
+                                                        }
+                                                        @if (arrow2) {
+                                                        <span class="arrow1"><i
+                                                                class="fa-solid fa-arrow-right"></i></span>
+                                                        <span class="arrow2"><i
+                                                                class="fa-solid fa-arrow-right"></i></span>
+                                                        }
+                                                    </a>
+                                                </div>
+                                                <div class="space20 d-lg-none d-block"></div>
+                                            </div>
+                                        </div>}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="vl-menu-close" (click)="toggleMenu()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </li>
+                        }
+                        @for (item of menu; track $index) {
+                        <li class="has-dropdown" [ngClass]="{ ' active': item.isOpen }">
+                            <a *ngIf="item.link" [routerLink]="item.link" (click)="toggleSubMenu(item)">
+                                {{ item.title }}
+                            </a>
+                            <a *ngIf="!item.link" href="javascript:void(0)" (click)="toggleSubMenu(item)">
+                                {{ item.title }}
+                            </a>
+
+                            @if (item.subMenu) {
+                            <ul class="sub-menu" [ngStyle]="{ 'display': item.isOpen ? 'block' : 'none' }">
+                                @for (subItem of item.subMenu; track $index) {
+                                <li>
+                                    @if(subItem.subMenu){
+                                    <a href="javascript:void(0);" class="span-arrow"
+                                        (click)="toggleSubMenu(subItem, $event)">
+                                        {{ subItem.title }}
+                                    </a>
+                                    <ul class="sub-menu menu1" [ngClass]="{ 'd-block': subItem.isOpen }">
+                                        @for (subSubItem of subItem.subMenu; track $index) {
+                                        <li>
+                                            <a [href]="subSubItem.link">{{ subSubItem.title }}</a>
+                                        </li>
+                                        }
+                                    </ul>
+
+                                    <button class="vl-menu-close" (click)="toggleSubMenu(subItem, $event)"><i
+                                            class="fas fa-chevron-right"></i></button>
+                                    }@else{
+                                    <a [href]="subItem.link">{{ subItem.title }}</a>
+                                    }
+                                </li>
+                                }
+                            </ul>
+                            <button class="vl-menu-close" (click)="toggleSubMenu(item, $event)"><i
+                                    class="fas fa-chevron-right"></i></button>
+                            }
+                        </li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="space20"></div>
+            <div class="vl-offcanvas-info">
+                <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
+                <div class="space20"></div>
+                <span><a href="javascript:void(0)"> <i class="fa-regular fa-envelope"></i> +57 9954 6476</a></span>
+                <span><a href="javascript:void(0)"><i class="fa-solid fa-phone"></i> hello&#64;exdos.com</a></span>
+                <span><a href="javascript:void(0)"><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a></span>
+            </div>
+            <div class="space20"></div>
+            <div class="vl-offcanvas-social">
+                <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+                <div class="space20"></div>
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="vl-offcanvas-overlay" [ngClass]="{ 'vl-offcanvas-overlay-open': isMobileMenuOpen }"
+        (click)="toggleMobileMenu()"></div>
+</div>

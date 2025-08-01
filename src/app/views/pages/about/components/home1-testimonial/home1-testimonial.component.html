@@ -1,0 +1,63 @@
+<div class="testimonial1-section-area sp1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 m-auto">
+                <div class="testimonial-header text-center heading2 space-margin60">
+                    <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>Testimonials</h5>
+                    <div class="space20"></div>
+                    <h2 class="text-anime-style-3">Experience the Difference Through Our Clients' Eyes</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="img1 image-anime reveal" appGsapReveal>
+                    <img src="assets/img/all-images/testimonial/testimonial-img1.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <ngx-slick-carousel class="slider-galeria" [config]="slideConfig">
+                    <div ngxSlickItem *ngFor="let slide of testimonialSlides" class="testimonial-slider-content-area">
+                        <div class="testimonial-author-area">
+                            <ul class="d-flex align-items-center gap-1 flex-wrap">
+                                <li *ngFor="let _ of [].constructor(slide.rating)">
+                                    <a href="javascript:void(0)"><i class="fa-solid fa-star"></i></a>
+                                </li>
+                            </ul>
+                            <div class="space16"></div>
+                            <img src="assets/img/icons/quito1.svg" alt="" class="quito1" />
+                            <img src="assets/img/elements/elements18.png" alt="" class="elements18" />
+                            <p>{{ slide.message }}</p>
+                        </div>
+
+                        <div class="space60"></div>
+
+                        <div class="testimonial-man-info-area">
+                            <div class="man-images-text">
+                                <div class="mans-img">
+                                    <img [src]="slide.image" alt="" />
+                                </div>
+                                <div class="man-text">
+                                    <a routerLink="/our-team">{{ slide.name }}</a>
+                                    <div class="space12"></div>
+                                    <p>{{ slide.role }}</p>
+                                </div>
+                            </div>
+                            <img src="assets/img/elements/elements17.png" alt="" />
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+
+            </div>
+
+            <div class="col-lg-1">
+                <ngx-slick-carousel [config]="sliderThumbConfig" class="slider-galeria-thumbs text-center d-lg-block d-none">
+                    <div ngxSlickItem *ngFor="let image of testimonialThumbImages" class="testimonial3-sliders-img">
+                        <img [src]="image" alt="">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="case-sider-widget-area {{isSidebarRight ? 'rightside' : ''}}">
+    <div class="img1 image-anime reveal" appGsapReveal>
+        <img src="assets/img/all-images/case/case-img12.png" alt="">
+    </div>
+    <div class="space32"></div>
+    <h3>Optimizing IT For Solutions</h3>
+    <div class="space20"></div>
+    <p>Our case studies showcase the tangible impact of our IT solutions on businesses across various
+        industries. From streamlining operations to enhancing security driving growth, these success
+        stories highlight how tailored technology solutions can solve real-world.</p>
+    <div class="space20"></div>
+    <p>Implementing effective IT solutions brings a myriad of benefits that can transform the way your
+        business operates. By streamlining processes and enhancing efficiency, these solutions help
+        reduce operational costs while improving overall productivity, advanced.</p>
+    <div class="space50"></div>
+    <h3>Why Your Business Needs IT Solutions Now</h3>
+    <div class="space20"></div>
+    <p>Investing in IT solutions is crucial for businesses aiming thrive in a competitive solution
+        landscape. These solutions not only streamline operations and enhance efficiency but
+        significantly reduce costs, enabling companies to allocate resources more effectively. </p>
+    <div class="space12"></div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <ul class="list">
+                <li><img src="assets/img/icons/check1.svg" alt="">Increased Efficiency</li>
+                <li><img src="assets/img/icons/check1.svg" alt="">Access To Expertise</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <ul class="list">
+                <li><img src="assets/img/icons/check1.svg" alt="">Enhanced Security</li>
+                <li><img src="assets/img/icons/check1.svg" alt="">Custom It Solutions</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <ul class="list">
+                <li><img src="assets/img/icons/check1.svg" alt="">Business Continuity</li>
+                <li><img src="assets/img/icons/check1.svg" alt="">Seamless Integration</li>
+            </ul>
+        </div>
+    </div>
+    <div class="space50"></div>
+    <h3>Maximize Efficiency Security with IT Solutions</h3>
+    <div class="space20"></div>
+    <p>The flexibility and scalability of modern IT infrastructure allow organizations to adapt to
+        changing market demands quickly, ensuring they remain agile responsive. By leveraging
+        data-driven insights, companies can make informed decisions that best drive growth. </p>
+    <div class="space28"></div>
+    <div class="bg-progress">
+        <div class="progress-bar" *ngFor="let item of progressData">
+            <label>{{ item.label }} <span>{{ item.value }}%</span></label>
+            <div class="progress">
+                <div class="progress-inner" [style.width.%]="item.value"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

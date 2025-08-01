@@ -1,0 +1,41 @@
+<app-page-header title="Blog Left Sidebar V1" />
+<div class="vl-blog-v1-area sp1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <app-blog-sidebar />
+                <div class="space30 d-lg-none d-block">
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div *ngFor="let blog of blogs.slice(0,6)" class="col-lg-6 col-md-6">
+                        <div class="vl-blog-1-item">
+                            <div class="vl-blog-1-thumb image-anime">
+                                <img [src]="blog.image" alt="">
+                            </div>
+                            <div class="vl-blog-1-content">
+                                <div class="vl-blog-meta">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><img src="assets/img/icons/calender3.svg" alt="">
+                                                {{blog.date}}</a></li>
+                                    </ul>
+                                </div>
+                                <div class="space16"></div>
+                                <h4 class="vl-blog-1-title"><a [routerLink]="blog.link">{{blog.title}}</a></h4>
+                                <div class="space20"></div>
+                                <a [routerLink]="blog.link" class="readmore">Learn More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="space30"></div>
+                        <app-pagination />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

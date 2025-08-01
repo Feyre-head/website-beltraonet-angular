@@ -1,0 +1,68 @@
+<div class="service-widget-sidebar">
+    <div class="search-area">
+        <h3>Search</h3>
+        <div class="space24"></div>
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <div class="space30"></div>
+
+    <div class="category-list-area">
+        <h3>Our Service</h3>
+        <div class="space10"></div>
+        <ul>
+            <li *ngFor="let service of services">
+                <a href="javascript:void(0)">
+                    {{ service }}
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="space30"></div>
+    <div class="tags-area">
+        <h3>Popular Tags</h3>
+        <div class="space8"></div>
+        <ul>
+            <li><a href="javascript:void(0)">#TechSolution</a></li>
+            <li><a href="javascript:void(0)">#CloudComputing</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:void(0)">#ManagedServices</a></li>
+            <li><a href="javascript:void(0)">#BusinessIT</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:void(0)">#DataSecurity</a></li>
+            <li><a href="javascript:void(0)">#TechForBusiness</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:void(0)">#TechUpgrades</a></li>
+            <li><a href="javascript:void(0)">#ITInfrastructure</a></li>
+        </ul>
+    </div>
+
+    <div class="space30"></div>
+    <div class="contact-boxarea">
+        <h3>Get A Free Quote</h3>
+        <div class="space8"></div>
+        <div class="input-area">
+            <input type="text" placeholder="Your Name">
+        </div>
+        <div class="input-area">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-area">
+            <input type="number" placeholder="Phone Number">
+        </div>
+        <div class="input-area">
+            <textarea placeholder="Your Message"></textarea>
+        </div>
+        <div class="space4"></div>
+        <div class="input-area text-end">
+            <button type="button" class="vl-btn2">Submit Now<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>

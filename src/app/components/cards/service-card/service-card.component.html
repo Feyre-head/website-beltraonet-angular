@@ -1,0 +1,14 @@
+<div class="service1-boxarea">
+    <div class="icons">
+        <img [src]="service.icon" alt="">
+    </div>
+    <div class="arrow">
+        <a routerLink="/services/single"><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="space24"></div>
+    <a routerLink="/services/single">{{service.title}}</a>
+    <div class="space16"></div>
+    <p>{{service.description}}</p>
+    <div class="space24"></div>
+    <h5>{{service.id.toString().padStart(2,'0')}}</h5>
+</div>

@@ -1,0 +1,18 @@
+<div class="service1-section-area sp2"
+    style="background-image: url(assets/img/all-images/bg/service-bg1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 m-auto">
+                <div class="heading2 text-center space-margin60">
+                    <h2>View More Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let service of services.slice(0,3);let i = index" class="col-lg-4 col-md-6" data-aos="zoom-in"
+                [attr.data-aos-duration]="800 + i * 100">
+                <app-service-card [service]="service" />
+            </div>
+        </div>
+    </div>
+</div>

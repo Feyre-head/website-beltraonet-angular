@@ -1,0 +1,34 @@
+<header class="homepage1-body">
+    <div id="vl-header-sticky" class="vl-header-area vl-transparent-header" stickyScroll>
+        <div class="container headerfix">
+            <div class="row align-items-center row-bg3">
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="vl-logo">
+                        <a routerLink="/home-1"><img src="assets/img/logo/logo1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="vl-main-menu text-center">
+                        <nav class="vl-mobile-menu-active">
+                            <app-nav-items themeBtn="vl-btn1" />
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="vl-hero-btn d-none d-lg-block text-end">
+                        <span class="vl-btn-wrap text-end">
+                            <a routerLink="/pages/contact" class="vl-btn1">Get Started Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+                    <div class="vl-header-action-item d-block d-lg-none">
+                        <button type="button" class="vl-offcanvas-toggle" (click)="toggleMobileMenu()">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<app-mobile-menu [isMobileMenuOpen]="isMobileMenuOpen" themeBtn="vl-btn1"/>

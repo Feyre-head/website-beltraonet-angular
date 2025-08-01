@@ -1,0 +1,83 @@
+<div class="service2-widget-sidebar {{isRightSide ? 'rightside' : '' }}">
+    <div class="img1 reveal image-anime" appGsapReveal>
+        <img src="assets/img/all-images/service/service-img2.png" alt="">
+    </div>
+    <div class="space32"></div>
+    <h3>Cyber Security Solution</h3>
+    <div class="space20"></div>
+    <p>In today’s rapidly evolving digital landscape, the security of your business data is more
+        critical than ever. Our Cyber Security Solutions offer a multi-layered approach best to
+        protecting you business from cyber threats, including malware, phishing, ransomware.</p>
+    <div class="space14"></div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <ul class="list">
+                <li><img src="assets/img/icons/check1.svg" alt="">Incident Response & Recovery</li>
+                <li><img src="assets/img/icons/check1.svg" alt="">Compliance Risk Management</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+            <ul class="list">
+                <li><img src="assets/img/icons/check1.svg" alt="">Secure Access Controls</li>
+                <li><img src="assets/img/icons/check1.svg" alt="">Vulnerability Assessments</li>
+            </ul>
+        </div>
+    </div>
+    <div class="space32"></div>
+    <div class="pera-box">
+        <h4>Safeguard Your Business With Advanced Cybersecurity</h4>
+        <div class="space12"></div>
+        <p>In an era where cyber threats are becoming increasingly sophisticated, protecting your
+            business has never been more crucial. Our Cyber Security Solution on comprehensive suite of
+            services designed to defend against a wide range of cyber attacks, from data.</p>
+    </div>
+    <div class="space18"></div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="space30"></div>
+            <div class="img1 reveal image-anime" appGsapReveal>
+                <img src="assets/img/all-images/service/service-img3.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="space30"></div>
+            <div class="img1 reveal image-anime" appGsapReveal>
+                <img src="assets/img/all-images/service/service-img4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="space32"></div>
+    <h3>Our Eitech Approach</h3>
+    <div class="space20"></div>
+    <p>In an era where cyber threats are becoming increasingly sophisticated, protecting your business
+        has never been more crucial. Our Cyber Security Solution offers a comprehen suite of services
+        designed to defend against a wide range of cyber attacks, from data breaches to ransomware. We
+        employ state-of-the-art technologies and strategies to safeguard your sensitive information and
+        IT infrastructure. Our proactive approach.</p>
+    <div class="space48"></div>
+    <h3>Frequently Asked Question</h3>
+    <div class="space20"></div>
+    <p>Our IT solutions are designed to streamline your business operations, enhance security, and
+        provide scalable infrastructure to support growth. Whether you're looking to best.</p>
+
+    <div class="faq-widget-area">
+        <div ngbAccordion [closeOthers]="true" id="accordionExample">
+            @for (faq of faqData; track $index;let first=$first) {
+            <div class="space24"></div>
+            <div ngbAccordionItem [collapsed]="first ? false : true">
+                <h2 ngbAccordionHeader>
+                    <button ngbAccordionButton type="button">
+                        {{faq.question}}
+                    </button>
+                </h2>
+                <div ngbAccordionCollapse>
+                    <div ngbAccordionBody>
+                        <p>{{faq.answer}}</p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

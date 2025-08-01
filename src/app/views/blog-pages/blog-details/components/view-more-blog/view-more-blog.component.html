@@ -1,0 +1,34 @@
+<div class="vl-blog-bottom-area sp2"
+    style="background-image: url(assets/img/all-images/bg/service-bg1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 m-auto">
+                <div class="heading2 space-margin60 text-center">
+                    <h2>View More Our Blog</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div *ngFor="let blog of blogs.slice(0,3)" class="col-lg-4 col-md-6">
+                <div class="vl-blog-1-item">
+                    <div class="vl-blog-1-thumb image-anime">
+                        <img [src]="blog.image" alt="">
+                    </div>
+                    <div class="vl-blog-1-content">
+                        <div class="vl-blog-meta">
+                            <ul>
+                                <li><a href="javascript:void(0)"><img src="assets/img/icons/calender3.svg" alt=""> {{blog.date}}</a></li>
+                            </ul>
+                        </div>
+                        <div class="space16"></div>
+                        <h4 class="vl-blog-1-title"><a href="/blog-details/single">{{blog.title}}</a></h4>
+                        <div class="space20"></div>
+                        <a routerLink="/blog-details/single" class="readmore">Learn More <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

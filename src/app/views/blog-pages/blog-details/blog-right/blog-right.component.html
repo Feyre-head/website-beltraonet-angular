@@ -1,0 +1,17 @@
+<app-page-header title="Blog Details Right Sidebar" />
+
+<div class="vl-blog-details-section sp1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <app-blog-detail-content [isRightSidebar]="true" />
+            </div>
+
+            <div class="col-lg-4">
+                <app-blog-detail-sidebar />
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-view-more-blog />

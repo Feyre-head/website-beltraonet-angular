@@ -1,0 +1,21 @@
+<div class="vl-blog-1-item">
+    <div class="vl-blog-1-thumb image-anime">
+        <img [src]="blog.image" alt="">
+    </div>
+    <div class="vl-blog-1-content">
+        <div class="vl-blog-meta">
+            <ul>
+                <li><a href="javascript:void(0)"><img src="assets/img/icons/calender1.svg" alt=""> {{blog.date}} <span> | </span></a>
+                </li>
+                <li><a href="javascript:void(0)"><img src="assets/img/icons/user1.svg" alt=""> {{blog.authorName}}</a></li>
+            </ul>
+        </div>
+        <div class="space20"></div>
+        <h4 class="vl-blog-1-title"><a routerLink="/blogs/single">{{blog.title}}</a></h4>
+        <div class="space16"></div>
+        <p>{{blog.description}}</p>
+        <div class="vl-blog-1-icon">
+            <a routerLink="/blogs/single"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>

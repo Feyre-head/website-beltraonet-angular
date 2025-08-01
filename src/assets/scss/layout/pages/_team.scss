@@ -1,0 +1,382 @@
+@use '../../utils/' as * ;
+
+/*============= TEAM CSS AREA ===============*/
+// Homepage 01 //
+.team1-section-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../../../img/all-images/bg/service-bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .team-header {
+        h5 {
+           &::after {
+            background: linear-gradient(0deg, rgba(114, 110, 252, 0.10) 0%, rgba(114, 110, 252, 0.10) 100%);            
+           }
+        }
+    }
+    .team-author-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        margin-bottom: 30px;
+        &:hover {
+            .img1 {
+                img {
+                    transform: scale(1.1) rotate(-4deg);
+                    transition: all .4s;
+                }
+            }
+            ul {
+                right: 50px;
+                transition: all .6s;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all .4s;
+            border-radius: 16px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+                transition: all .4s;
+            }
+        }
+
+        .content-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 16px;
+            background: #FFF;
+            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);  
+            padding: 28px 24px; 
+            position: relative;
+            z-index: 1;
+            margin: -55px 24px 0 24px;
+            .text {
+                a {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px; /* 100% */
+                    display: inline-block;
+                    transition: all .4s;                    
+                }
+                p {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-medium);
+                    line-height: 16px;                  
+                }
+            }  
+            .icons {
+                a {
+                    height: 50px;
+                    width: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    transition: all .4s;
+                    display: inline-block;
+                    background: var(--Main-Color, linear-gradient(90deg, #2E0797 0%, #726EFC 100%));
+                }
+            }           
+        }
+        
+        ul {
+            position: absolute;
+            bottom: 124px;
+            z-index: 2;
+            right: -100px;
+            transition: all .4s;
+            li {
+                a {
+                    background: #EFF1FF;
+                    height: 44px;
+                    width: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: all .4s;
+                    color: var(--ztc-text-text-2);
+                    margin-top: 12px;
+                    font-size: var(--ztc-font-size-font-s20);
+                    &:hover {
+                        background: #2E0797;
+                        transition: all .4s;
+                        color: var(--ztc-text-text-1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 02 //
+.team2-section-area {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url(../../../img/all-images/bg/footer-bg1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url(../../../img/all-images/bg/team-bg1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        opacity: 0.1;
+    }
+    .team-author-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        margin-bottom: 30px;
+        &:hover {
+            .img1 {
+                img {
+                    transform: scale(1.1) rotate(-4deg);
+                    transition: all .4s;
+                    filter: grayscale(1);
+                }
+            }
+            ul {
+                bottom: 100px;
+                transition: all .6s;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all .4s;
+            border-radius: 16px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+                transition: all .4s;
+            }
+        }
+
+        .content-area {  
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 24px;
+            .text {
+                a {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px; /* 100% */
+                    display: inline-block;
+                    transition: all .4s;                    
+                }
+                p {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-medium);
+                    line-height: 16px;  
+                    opacity: 80%;                
+                }
+            }            
+        }
+        
+        ul {
+            position: absolute;
+            bottom: 70%;
+            z-index: 2;
+            transition: all .4s;
+            border-radius: 8px;
+            background: var(--ztc-text-text-6);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            left: 10%;
+            right: 10%;
+            visibility: hidden;
+            opacity: 0;
+            @media #{$xs} {
+                left: 15%;
+                right: 15%;
+            }
+            li {
+                display: inline-block;
+                a {
+                    background: rgba(255, 255, 255, 0.10);
+                    height: 44px;
+                    width: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: all .4s;
+                    color: var(--ztc-text-text-1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    margin: 0 8px 0 0;
+                    &:hover {
+                        background: var(--ztc-text-text-5);
+                        transition: all .4s;
+                        color: var(--ztc-text-text-6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Inner Pages //
+.teaminner-section-area {
+    position: relative;
+    z-index: 1;
+    .team-header {
+        h5 {
+           &::after {
+            background: linear-gradient(0deg, rgba(114, 110, 252, 0.10) 0%, rgba(114, 110, 252, 0.10) 100%);            
+           }
+        }
+    }
+    .team-author-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        margin-bottom: 30px;
+        &:hover {
+            .img1 {
+                img {
+                    transform: scale(1.1) rotate(-4deg);
+                    transition: all .4s;
+                }
+            }
+            ul {
+                right: 50px;
+                transition: all .6s;
+            }
+        }
+        .img1 {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all .4s;
+            border-radius: 16px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+                transition: all .4s;
+            }
+        }
+
+        .content-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 16px;
+            background: #FFF;
+            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
+            padding: 28px 24px; 
+            position: relative;
+            z-index: 1;
+            margin: -55px 24px 0 24px;
+            .text {
+                a {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px; /* 100% */
+                    display: inline-block;
+                    transition: all .4s;                    
+                }
+                p {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-medium);
+                    line-height: 16px;                  
+                }
+            }  
+            .icons {
+                a {
+                    height: 50px;
+                    width: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    transition: all .4s;
+                    display: inline-block;
+                    background: var(--Main-Color, linear-gradient(90deg, #2E0797 0%, #726EFC 100%));
+                }
+            }           
+        }
+        
+        ul {
+            position: absolute;
+            bottom: 124px;
+            z-index: 2;
+            right: -100px;
+            transition: all .4s;
+            li {
+                a {
+                    background: #fff;
+                    height: 44px;
+                    width: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: all .4s;
+                    color: var(--ztc-text-text-2);
+                    margin-top: 12px;
+                    font-size: var(--ztc-font-size-font-s20);
+                    &:hover {
+                        background: #2E0797;
+                        transition: all .4s;
+                        color: var(--ztc-text-text-1);
+                    }
+                }
+            }
+        }
+    }
+}
+/*============= TEAM CSS AREA STARTS ===============*/

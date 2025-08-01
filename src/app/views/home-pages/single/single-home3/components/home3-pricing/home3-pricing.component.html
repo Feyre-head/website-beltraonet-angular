@@ -1,0 +1,69 @@
+<div class="pricingplan1-section-area sp2">
+  <img src="assets/img/elements/elements30.png" alt="" class="elements30">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 m-auto">
+        <div class="pricing-header heading5 text-center">
+          <h5><img src="assets/img/icons/sub-logo3.svg" alt="">PLANOS DISPONÍVEIS</h5>
+          <div class="space20"></div>
+          <h2 class="text-anime-style-3">
+            Encontre o Plano de Internet Ideal para Você 
+          </h2>
+        </div>
+        <div class="space24"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="plan-toggle-wrap space-margin60" [class.active]="isYearly">
+          <!-- <div class="toggle-inner">
+            <input id="ce-toggle" type="checkbox" [checked]="!isYearly" (change)="togglePlan()">
+            <span class="custom-toggle"></span>
+            <div class="t-month">
+              <h4>Monthly</h4>
+            </div>
+            <div class="t-year">
+              <h4>Yearly</h4>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-3 col-md-6" *ngFor="let plan of plans" data-aos="flip-right" data-aos-duration="800">
+            <div class="single-pricing-area">
+              <div class="pricing-box">
+                <h3 class="text-center">{{ plan.name }}</h3>
+                <div class="space14"></div>
+                <p>Plano Residencial / Empresarial</p>
+                <div class="space12"></div>
+                <ul>                  
+                  <li *ngFor="let downloadSpeed of plan.downloadSpeed">
+                    <img src="assets/img/icons/check4.svg" alt=""> {{ downloadSpeed }}
+                  </li>
+                  <li *ngFor="let uploadSpeed of plan.uploadSpeed">
+                    <img src="assets/img/icons/check4.svg" alt=""> {{ uploadSpeed }}
+                  </li>
+                  <li *ngFor="let feature of plan.features">
+                    <img src="assets/img/icons/check4.svg" alt=""> {{ feature }}
+                  </li>
+                </ul>
+                <div class="space28"></div>
+                <!-- <h2>
+                  ${{ isYearly ? plan.yearlyPrice : plan.monthlyPrice }} 
+                  <span>/{{ isYearly ? 'Yearly' : 'Monthly' }}</span>
+                </h2> -->
+                <div class="space24"></div>
+                <div class="btn-area1">
+                  <a href="javascript:void(0)" class="vl-btn4">Contratar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>

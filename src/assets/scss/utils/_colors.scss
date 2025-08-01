@@ -1,0 +1,39 @@
+$colors: (
+    'text': (
+        'text-1': #fff,
+        'text-2': #050734,
+        'text-3': #37385C,
+        'text-4': #EFF1FF,
+        'text-5':#C0F037,
+        'text-6':#032530,
+        'text-7':#0E082B,
+        'text-8':#46475F,
+        'text-9':#3A0CA3,
+        'text-10':#010225,
+        'text-11':#3D3E58,
+        'text-12':#202CD3,
+        'text-13':#6D4BFB,
+        'text-14':#010225,
+        'text-15':#505169,
+    ),
+    'bg': (
+        'bg-1':#fff,
+        'bg-2':#050734,
+        'bg-3': #37385C,
+        'bg-4': #EFF1FF,
+        'bg-5': var(--Main-Color, linear-gradient(90deg, #2E0797 0%, #726EFC 100%)),
+        'bg-6':#C0F037,
+        'bg-7':#032530,
+        'bg-8':#0E082B,
+        'bg-9':#3A0CA3,
+        'bg-10': linear-gradient(90deg, #202CD3 1.1%, #0778F9 100%),
+        'bg-11':#010225,
+        'bg-12':#6D4BFB,
+        'bg-13':#010225,
+    ),
+    'border': (
+        'border-1': #E5E7EB,
+        'border-2': #dfdcdc,
+    )
+);
+

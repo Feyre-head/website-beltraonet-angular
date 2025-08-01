@@ -1,0 +1,71 @@
+<div class="blog-auhtor-details-side">
+  <div class="search-area">
+    <h3>Search</h3>
+    <div class="space24"></div>
+    <form>
+      <input type="text" placeholder="Search..." />
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+
+  <div class="space30"></div>
+
+  <div class="category-list-area">
+    <h3>Blog Category</h3>
+    <div class="space10"></div>
+    <ul>
+      <li *ngFor="let category of categories">
+        <a href="javascript:void(0)">{{ category }} <span><i class="fa-solid fa-angle-right"></i></span></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="space30"></div>
+
+  <div class="tags-area">
+    <h3>Popular Tags</h3>
+    <div class="space8"></div>
+    <ul *ngFor="let pair of tags">
+      <li *ngFor="let tag of pair"><a href="javascript:void(0)">{{ tag }}</a></li>
+    </ul>
+  </div>
+
+  <div class="space30"></div>
+
+  <div class="recent-posts-area">
+    <h3>Latest Added Blog</h3>
+    <div class="space24"></div>
+    <div *ngFor="let post of recentPosts" class="recent-posts">
+      <div class="img1">
+        <img [src]="post.image" alt="" />
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            <a href="javascript:void(0)"><img src="assets/img/icons/calender3.svg" alt="" />{{ post.date }}</a>
+          </li>
+        </ul>
+        <div class="space16"></div>
+        <h4><a routerLink="/blog-details/single">{{ post.title }}</a></h4>
+      </div>
+      <div class="space30"></div>
+    </div>
+  </div>
+
+  <div class="space30"></div>
+  <div class="auhtor-area">
+    <h3>Our Author</h3>
+    <div class="space24"></div>
+    <ul>
+      <li *ngFor="let author of authors.slice(0, 4)">
+        <a href="javascript:void(0)"><img [src]="author" alt="" /></a>
+      </li>
+    </ul>
+    <div class="space16"></div>
+    <ul>
+      <li *ngFor="let author of authors.slice(4)">
+        <a href="javascript:void(0)"><img [src]="author" alt="" /></a>
+      </li>
+    </ul>
+  </div>
+</div>

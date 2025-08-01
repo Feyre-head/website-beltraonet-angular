@@ -1,0 +1,150 @@
+<div class="blog-others-sidebar {{isRightSidebar ? 'rightside' : ''}}">
+    <div class="img1">
+        <img src="assets/img/all-images/blog/blog-img25.png" alt="">
+    </div>
+    <div class="space32"></div>
+    <ul class="list-author">
+        <li><a href="javascript:void(0)">#BestTechSolution</a></li>
+        <li><a href="javascript:void(0)"><img src="assets/img/icons/calender1.svg" alt=""> 4 August 2024 <span> |
+                </span></a></li>
+        <li><a href="javascript:void(0)"><img src="assets/img/icons/comments1.svg" alt=""> 2 Comments</a></li>
+    </ul>
+    <div class="space24"></div>
+    <h2>Unlock the Full Potential Your Company through Innovative Technology Expert</h2>
+    <div class="space20"></div>
+    <p>Unlocking the full potential company requires more than just the latest technology; it
+        necessitates comprehensive strategy backed by expert support. At Eitech, we are of understand
+        that each business is unique, with distinct challenges an company goals. </p>
+    <div class="space18"></div>
+    <p>In today’s fast-paced business environment, the ability to adapt and innovate crucial for
+        success. At Eitech, we specialize in providing comprehensive technology solutions that align
+        with your strategic objectives. Our team of experts works closely with you.</p>
+    <div class="space18"></div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="space30"></div>
+            <div class="img1 image-anime">
+                <img src="assets/img/all-images/blog/blog-img26.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="space30"></div>
+            <div class="img1 image-anime">
+                <img src="assets/img/all-images/blog/blog-img27.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="space32"></div>
+    <h3>Maximize Efficiency Security with IT Solutions</h3>
+    <div class="space16"></div>
+    <p>The flexibility and scalability of modern IT infrastructure allow organizations to adapt to
+        changing market demands quickly, ensuring they remain agile responsive. By leveraging
+        data-driven insights, companies can make informed decisions that best drive growth. </p>
+    <div class="space16"></div>
+    <p>IT solutions encompass a wide range of services and technologies designed to meet the unique
+        needs of businesses. These solutions can include cloud computing, cybersecurity measures, data
+        analytics, and comprehensive IT management services, by integrating.</p>
+    <div class="space48"></div>
+    <div class="images">
+        <div class="img1 image-anime">
+            <img src="assets/img/all-images/blog/blog-img28.png" alt="">
+        </div>
+        <div class="play">
+            <a (click)="openVideoModal()" class="popup-youtube"><i
+                    class="fa-solid fa-play"></i></a>
+        </div>
+        <ng-template #videoModal let-modal>
+            <div class="modal-body p-0 position-relative rounded-3 overflow-hidden">
+                <button type="button"
+                    class="btn-close btn btn-light rounded-circle bg-white p-2 position-absolute top-0 end-0 m-3"
+                    aria-label="Close" (click)="modal.dismiss()"></button>
+
+                <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=Y8XpQpW5OVY" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </ng-template>
+    </div>
+    <div class="space32"></div>
+    <h3>Maintaining Regulatory Compliance</h3>
+    <div class="space16"></div>
+    <p>Implementing IT solutions brings numerous benefits that can significantly enhance the business
+        performance. First and foremost, these solutions streamline operations best automating
+        repetitive tasks and improving overall efficiency, allowing employees.</p>
+    <div class="space40"></div>
+    <div class="tags-social">
+        <div class="tags">
+            <ul>
+                <li>Tags:</li>
+                <li><a href="javascript:void(0)">#TechSolution</a></li>
+                <li><a href="javascript:void(0)" class="m-0">#BussinessIT</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li>Social:</li>
+                <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="javascript:void(0)" class="m-0"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="space60"></div>
+    <h3>Blog Comments ({{ comments.length }})</h3>
+    <div class="space32"></div>
+
+    @for (comment of comments; track $index;let last=$last) {
+    <div class="comments-boxarea" [ngClass]="{ 'box2': comment.isReply }">
+        <div class="comments-boxes">
+            <div class="comments-auhtor-box">
+                <div class="img3">
+                    <img [src]="comment.img" alt="">
+                </div>
+                <div class="content">
+                    <a href="javascript:void(0)" class="date">
+                        <img src="assets/img/icons/calender1.svg" alt=""> {{ comment.date }}
+                    </a>
+                    <a routerLink="/pages/our-team" class="name">{{ comment.author }}</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="reply">
+                <i class="fa-solid fa-reply"></i> Reply
+            </a>
+        </div>
+
+        <div class="space16"></div>
+        <p>{{ comment.content }}</p>
+    </div>
+    <div class="space30" *ngIf="!last"></div>
+    }
+
+    <div class="space48"></div>
+    <h3>Leave A Reply Now</h3>
+    <div class="space32"></div>
+    <div class="contact-boxarea">
+        <h3>Send Us A Message</h3>
+        <div class="space8"></div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-area">
+                    <input type="text" placeholder="Your Name">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-area">
+                    <input type="email" placeholder="Email Address">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="input-area">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="space4"></div>
+                <div class="input-area">
+                    <button type="button" class="vl-btn2">Leave A Reply<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

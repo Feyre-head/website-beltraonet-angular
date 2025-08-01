@@ -1,0 +1,13 @@
+<div class="case-slider-boxarea">
+    <div class="img1 image-anime">
+        <img [src]="case.image" alt="">
+    </div>
+    <div class="content-area">
+        <p>{{case.tag}}</p>
+        <div class="space16"></div>
+        <a [routerLink]="case.link ?? ['']">{{case.title}}</a>
+        <div class="arrow">
+            <a [routerLink]="case.link ?? ['']"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>

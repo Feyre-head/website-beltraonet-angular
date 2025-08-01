@@ -1,0 +1,79 @@
+<app-page-header title="FAQ Question" />
+
+<div class="faq-inner-section-area sp1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 m-auto">
+                <div class="heading2 text-center space-margin60">
+                    <h2>Frequently Asked Question</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="faq-widget-area">
+                    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li *ngFor="let tab of faqTabs;let i = index" [ngbNavItem]="i" role="presentation">
+                            <button ngbNavLink class="nav-link" type="button">{{tab}}</button>
+                            <ng-template ngbNavContent>
+                                <div class="faq-section-area">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="accordian-area">
+                                                <div ngbAccordion [closeOthers]="true" class="accordion"
+                                                    id="accordionExample">
+                                                    @for (faq of faqs1; track $index;let last=$last;let first=$first) {
+                                                    <div ngbAccordionItem [collapsed]="first ? false : true">
+                                                        <h2 ngbAccordionHeader>
+                                                            <button ngbAccordionButton type="button">
+                                                                {{faq.question}}
+                                                            </button>
+                                                        </h2>
+                                                        <div ngbAccordionCollapse id="collapseOne">
+                                                            <div ngbAccordionBody>
+                                                                <p>{{faq.answer}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div *ngIf="!last" class="space20"></div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="accordian-area">
+                                                  <div ngbAccordion [closeOthers]="true" class="accordion"
+                                                    id="accordionExample">
+                                                    @for (faq of faqs2; track $index;let last=$last;) {
+                                                    <div ngbAccordionItem>
+                                                        <h2 ngbAccordionHeader>
+                                                            <button ngbAccordionButton type="button">
+                                                                {{faq.question}}
+                                                            </button>
+                                                        </h2>
+                                                        <div ngbAccordionCollapse id="collapseOne">
+                                                            <div ngbAccordionBody>
+                                                                <p>{{faq.answer}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div *ngIf="!last" class="space20"></div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </li>
+
+                    </ul>
+                    <div class="space48"></div>
+                    <div class="tab-content" [ngbNavOutlet]="nav" id="pills-tabContent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<ul>
+    @for (item of menuItems; track $index) {
+    <li class="has-dropdown">
+        <a [routerLink]="item.link" (click)="$event.preventDefault()">
+            {{ item.title }}
+            @if (item.icon) {
+            <span><i class="{{ item.icon }}"></i></span>
+            }
+        </a>
+
+        @if (item.megaMenu) {
+        <div class="vl-mega-menu">
+            <div class="vl-home-menu">
+                <div class="row gx-3 row-cols-1 row-cols-md-1 row-cols-lg-5">
+                    @for (subItem of item.megaMenu; track $index) {
+                    <div class="col">
+                        <div class="vl-home-thumb">
+                            <div class="img1">
+                                <img [src]="subItem.image" [alt]="subItem.title" />
+                            </div>
+                            <a class="text" [routerLink]="subItem.link">{{ subItem.title }}</a>
+                            <div class="btn-area1">
+                                <a [routerLink]="subItem.link" [class]="themeBtn">
+                                    <ng-container *ngIf="arrow2; else multiPageSpan">Multi page</ng-container>
+                                    <ng-template #multiPageSpan><span class="demo">Multi Page</span></ng-template>
+
+                                    @if (arrow) {
+                                    <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                                    }
+                                    @if (arrow2) {
+                                    <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span>
+                                    <span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span>
+                                    }
+                                </a>
+                                @if (!arrow) {
+                                <div class="space16"></div>
+                                }
+                                @if(btnSpace) {
+                                <div class="space16"></div>
+                                <div class="space20 d-lg-none d-block"></div>
+                                }
+
+                                <a [routerLink]="subItem.singleLink" [class]="themeBtn">     
+                                    <ng-container *ngIf="arrow2; else onePageSpan">One page</ng-container>
+                                    <ng-template #onePageSpan><span class="demo">One Page</span></ng-template>
+                                    @if (arrow) {
+                                    <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                                    }
+                                      @if (arrow2) {
+                                    <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span>
+                                    <span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span>
+                                    }
+                                </a>
+                            </div>
+                            <div class="space20 d-lg-none d-block"></div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>}
+
+        @if (item.subMenu) {
+        <ul class="sub-menu">
+            @for (subItem of item.subMenu; track $index) {
+            <li>
+
+                @if (subItem.subMenu) {
+                <a href="javascript:void(0);" class="span-arrow" (click)="$event.preventDefault()">
+                    {{ subItem.title }}
+                    <span><i class="fa-solid fa-angle-right d-lg-block d-none"></i></span>
+                </a>
+                <ul class="sub-menu menu1">
+                    @for (innerSubItem of subItem.subMenu; track $index) {
+                    <li>
+                        <a [href]="innerSubItem.link">{{ innerSubItem.title }}</a>
+                    </li>
+                    }
+                </ul>}@else{
+                <a [routerLink]="subItem.link">{{ subItem.title }}</a>
+                }
+
+            </li>
+            }
+        </ul>
+        }
+    </li>
+    }
+</ul>
