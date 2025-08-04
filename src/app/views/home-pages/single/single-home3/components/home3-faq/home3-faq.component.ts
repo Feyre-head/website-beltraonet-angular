@@ -14,17 +14,13 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 export class Home3FaqComponent {
     faqs: FaqType[] = [
         {
-            question: 'Como entro em contato com o suporte da Beltraonet?',
-            answer: 'Ligue para 0800 649 5000 ou (46) 3520‑1500 (das 8h às 20h todos os dias) ou escreva para contato@beltraonet.com.br'
+            question: 'Como faço para contratar um plano de internet da Beltraonet?',
+            answer: 'Você pode contratar um plano diretamente pelo nosso site, WhatsApp, telefone ou visitando nossa loja física. Também temos consultores disponíveis para te ajudar a escolher o plano ideal.'
         },
         {
-            question: 'Posso solicitar um retorno de chamada?',
-            answer: 'Sim. você pode deixar seu telefone ao enviar um e-mail, a equipe pode retornar a ligação para resolver a solicitação.'
-        },
-        {
-            question: 'Quanto tempo demora para receber uma resposta?',
-            answer: 'As ligações e mensagem através do WhatsApp são atendidas das 8h às 20h, e mensagens por e‑mail costumam ser respondidas no mesmo dia.'
-        },
+            question: 'Qual é o prazo para instalação após a contratação?',
+            answer: 'Normalmente realizamos a instalação em até 48 horas úteis após a confirmação do pedido, dependendo da disponibilidade técnica na sua área.'
+        },       
         {
             question: 'Quais são os horários de funcionamento do suporte?',
             answer: 'O atendimento telefônico funciona todos os dias, das 8h às 20h beltraonet.com.br; fora desse período, você pode enviar e‑mail.'

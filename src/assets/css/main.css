@@ -16,7 +16,7 @@ ul li {
 }
 
 h2, p {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 h1,
@@ -9769,7 +9769,7 @@ Location:
 }
 .faq3-section-area .faq-accordion-area .accordion-item h2 button::before {
   position: absolute;
-  content: "";
+  /* content: ""; */
   height: 32px;
   width: 32px;
   text-align: center;

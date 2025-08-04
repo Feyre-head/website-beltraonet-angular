@@ -34,7 +34,7 @@ export class FooterComponent {
                 { label: 'Acesso', link: 'https://www.beltraonet.com.br/ca/#/login' },
                 { label: 'Segunda via do boleto', link: 'https://www.beltraonet.com.br/ca/#/segunda-via' },
                 { label: 'Contrato', link: 'assets/documents/contrato.pdf' },
-                { label: 'Contrato com valor adicionado' },                
+                { label: 'Contrato com valor adicionado', link: 'assets/documents/contratoAdicionado.pdf' },                
             ],
         },
         {
