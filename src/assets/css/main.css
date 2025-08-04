@@ -9733,12 +9733,12 @@ Location:
   left: -50px;
   z-index: -1;
 }
-.faq3-section-area .faq-accordion-area .accordion-item {
+/* .faq3-section-area .faq-accordion-area .accordion-item {
   border: none;
   padding: 0;
   background: #151bbc;
   border-radius: 10px;
-}
+} */
 .faq3-section-area .faq-accordion-area .accordion-item h2 button {
   border-radius: 8px;
   background: #FFF;

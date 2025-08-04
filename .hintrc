@@ -13,7 +13,8 @@
           "color-adjust"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   },
   "browserslist": [
     "defaults",
