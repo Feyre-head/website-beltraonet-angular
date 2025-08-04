@@ -14,17 +14,17 @@
                     <div class="space24"></div>
                     <ul>
                         <li>
-                            <a href="javascript:void(0)" aria-label="Facebook" title="Facebook">
+                            <a href="https://www.facebook.com/beltraonet" aria-label="Facebook" title="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" aria-label="Instagram" title="Instagram">
+                            <a href="https://www.instagram.com/beltraonet/" aria-label="Instagram" title="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" class="m-0" aria-label="WhatsApp" title="WhatsApp">
+                            <a href="https://api.whatsapp.com/send?phone=554635201501&text=Ol%C3%A1,%20preciso%20de%20ajuda." class="m-0" aria-label="WhatsApp" title="WhatsApp">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
                         </li>
@@ -40,10 +40,28 @@
                     <h3>{{ section.title }}</h3>
                     <ul>
                         <li *ngFor="let item of section.items">
-                            <a [routerLink]="item.link ? item.link : ['']">
-                                <img *ngIf="item.icon" [src]="item.icon" alt="" />
-                                {{ item.label }}
-                            </a>
+                            <a *ngIf="item.link && item.link.startsWith('/')"
+   [routerLink]="item.link"
+   routerLinkActive="active">
+   <img *ngIf="item.icon" [src]="item.icon" alt="" />
+   {{ item.label }}
+</a>
+
+<!-- Links EXTERNOS (https, mailto, tel, etc) -->
+<a *ngIf="item.link && !item.link.startsWith('/')"
+   [href]="item.link"
+   target="_blank"
+   rel="noopener noreferrer">
+   <img *ngIf="item.icon" [src]="item.icon" alt="" />
+   {{ item.label }}
+</a>
+
+<a>   <!-- Texto sem link -->
+<span *ngIf="!item.link">
+  <img *ngIf="item.icon" [src]="item.icon" alt="" />
+  {{ item.label }}
+</span>
+</a>
                         </li>
                     </ul>
                 </div>

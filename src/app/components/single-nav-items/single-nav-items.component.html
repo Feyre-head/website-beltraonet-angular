@@ -1,4 +1,7 @@
 <ul class="nav-pills">
-     <li *ngFor="let item of menuItems" (click)="scroll.scrollTo(item)" class="nav-item"><a href="javascript:void(0)" class="nav-link"
-                [class.active]="scroll.activeSection === slugify(item)">{{item}}</a></li>
+     <li *ngFor="let item of menuItems" (click)="scroll.scrollTo(item)" class="nav-item">
+          <a href="javascript:void(0)" class="nav-link"
+               [class.active]="scroll.activeSection === slugify(item)">{{item}}
+          </a>
+     </li>
 </ul>

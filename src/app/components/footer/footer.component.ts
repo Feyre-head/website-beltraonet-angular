@@ -31,27 +31,26 @@ export class FooterComponent {
         {
             title: 'Links Rápidos',
             items: [
-                { label: 'Acesso', link: '/pages/about' },
-                { label: 'Segunda via do boleto', link: '/services' },
-                { label: 'Contrato', link: '/blogs/one' },
+                { label: 'Acesso', link: 'https://www.beltraonet.com.br/ca/#/login' },
+                { label: 'Segunda via do boleto', link: 'https://www.beltraonet.com.br/ca/#/segunda-via' },
+                { label: 'Contrato', link: 'assets/documents/contrato.pdf' },
                 { label: 'Contrato com valor adicionado' },                
             ],
         },
         {
             title: 'Our Services',
             items: [
-                { label: 'Termos de uso' },
-                { label: 'Política de privacidade' },   
-                { label: 'Fale conosco', link: '/pages/contact' }            
+                { label: 'Política de privacidade',link: '/blogs/one' },   
+                { label: 'Fale conosco', link:'https://api.whatsapp.com/send?phone=554635201501&text=Ol%C3%A1,%20preciso%20de%20ajuda.' }            
             ],
         },
         {
             title: 'Fale com a Gente',
             items: [
-                { label: '+(46) 3520-1500', link: 'tel:+554635201500', icon: 'assets/img/icons/phn1.svg' },
-                { label: '+0800 649 5000 ', link: 'tel:+5508006495000 ', icon: 'assets/img/icons/phn1.svg' },
+                { label: '(46) 3520-1500',  icon: 'assets/img/icons/phn1.svg' },
+                { label: '0800 649 5000 ', icon: 'assets/img/icons/phn1.svg' },
                 { label: 'Rua Florianópolis, 433', icon: 'assets/img/icons/location1.svg' },
-                { label: 'contato@beltraonet.com.br', link: 'mailto:eitechsolution@com', icon: 'assets/img/icons/email1.svg' },
+                { label: 'contato@beltraonet.com.br',  icon: 'assets/img/icons/email1.svg' },
                 { label: 'www.beltraonet.com.br', link: '/', icon: 'assets/img/icons/global1.svg' },
             ],
         },
