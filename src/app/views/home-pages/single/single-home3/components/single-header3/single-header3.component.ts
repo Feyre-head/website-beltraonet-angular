@@ -11,7 +11,7 @@ import { SingleNavItemsComponent } from '@app/components/single-nav-items/single
     styles: ``
 })
 export class SingleHeader3Component {
-    menuItems: string[] = ["Home", "Works", "Support", "Features", "Pricing", "FAQs"];
+    menuItems: string[] = ["Home","Planos", "Cobertura", "Suporte", "Ajuda"];
     isMobileMenuOpen = false;
     menuOpen = false;
 
