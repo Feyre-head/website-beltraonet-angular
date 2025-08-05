@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home3-features',
    host: { 'data-component-id': 'home3-feature-instance' },
-  imports: [RouterLink],
+  
   templateUrl: './home3-features.component.html',
   styles: ``
 })
