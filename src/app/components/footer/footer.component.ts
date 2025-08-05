@@ -38,10 +38,10 @@ export class FooterComponent {
             ],
         },
         {
-            title: 'Our Services',
+            title: 'Informações',
             items: [
                 { label: 'Política de privacidade',link: '/blogs/one' },   
-                { label: 'Fale conosco', link:'https://api.whatsapp.com/send?phone=554635201501&text=Ol%C3%A1,%20preciso%20de%20ajuda.' }            
+                { label: 'Fale conosco', link:'/pages/contact' }            
             ],
         },
         {
