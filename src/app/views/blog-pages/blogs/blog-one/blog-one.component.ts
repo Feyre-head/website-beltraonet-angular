@@ -7,7 +7,7 @@ import { PaginationComponent } from "@app/components/pagination/pagination.compo
 
 @Component({
     selector: 'app-blog-one',
-    imports: [PageHeaderComponent, CommonModule, PaginationComponent,RouterLink],
+    imports: [PageHeaderComponent, CommonModule,],
     templateUrl: './blog-one.component.html',
     styles: ``
 })
