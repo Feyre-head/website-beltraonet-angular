@@ -1,16 +1,23 @@
-import { blogs2 } from '@/assets/data';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { PageHeaderComponent } from "@app/components/page-header/page-header.component";
-import { PaginationComponent } from "@app/components/pagination/pagination.component";
+import { blogs2 } from '@/assets/data';
 
 @Component({
-    selector: 'app-blog-one',
-    imports: [PageHeaderComponent, CommonModule,],
-    templateUrl: './blog-one.component.html',
-    styles: ``
+  selector: 'app-blog-one',
+  standalone: true,
+  imports: [PageHeaderComponent, CommonModule],
+  templateUrl: './blog-one.component.html',
+  styles: ``
 })
-export class BlogOneComponent {
-    blogs = blogs2
+export class BlogOneComponent implements OnInit {
+  blogs = blogs2;
+
+  ngOnInit(): void {
+    // Instantâneo:
+    // window.scrollTo(0, 0);
+
+    // Suave:
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

@@ -4,7 +4,7 @@ import { PageHeaderComponent } from "@app/components/page-header/page-header.com
 
 @Component({
   selector: 'app-contact',
-  imports: [PageHeaderComponent,GsapRevealDirective],
+  imports: [PageHeaderComponent],
   templateUrl: './contact.component.html',
   styles: ``
 })

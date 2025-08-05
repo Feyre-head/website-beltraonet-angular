@@ -13,7 +13,7 @@ import { FaviconService } from '@/core/services/favicon.service';
 
 @Component({
   selector: 'app-single-home3',
-  imports: [SingleHeader3Component, Home3HeroComponent, Home3WorkComponent, Home3SupportComponent, Home3FeaturesComponent, Home3PricingComponent, Home3FaqComponent, FooterComponent, Home3AboutComponent],
+  imports: [SingleHeader3Component, Home3HeroComponent, Home3SupportComponent, Home3FeaturesComponent, Home3PricingComponent, Home3FaqComponent, FooterComponent],
   templateUrl: './single-home3.component.html',
   styles: ``
 })
