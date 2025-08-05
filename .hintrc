@@ -10,11 +10,15 @@
           "scrollbar-width",
           "-webkit-text-size-adjust",
           "-webkit-overflow-scrolling",
-          "color-adjust"
+          "color-adjust",
+          "mask-position",
+          "mask-image",
+          "mask-size"
         ]
       }
     ],
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "css-prefix-order": "off"
   },
   "browserslist": [
     "defaults",
@@ -22,6 +26,8 @@
     "not chrome <= 112",
     "not ios_saf <= 18.5",
     "not safari <= 18.5",
-    "not samsung <= 28"
+    "not samsung <= 28",
+    "not and_ff <= 140",
+    "not firefox <= 140"
   ]
 }

@@ -497,6 +497,7 @@
     &:hover {
         color: var(--ztc-text-text-1);
         transition: all .4s;
+        background: #000000 !important;
         i {
             transform: rotate(0);
             transition: all .4s;

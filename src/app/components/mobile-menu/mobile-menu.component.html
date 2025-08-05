@@ -6,7 +6,7 @@
                     <a routerLink="/home-1"><img src="assets/img/logo/logo1.png" alt=""></a>
                 </div>
                 <div class="vl-offcanvas-close">
-                    <button class="vl-offcanvas-close-toggle" (click)="toggleMobileMenu()"><i
+                    <button class="vl-offcanvas-close-toggle" (click)="toggleMobileMenu()" title="Close menu" aria-label="Close menu"><i
                             class="fa-solid fa-xmark"></i></button>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                                         <div class="col">
                                             <div class="vl-home-thumb">
                                                 <div class="img1">
-                                                    <img [src]="item.image" [alt]="">
+                                                    <img [src]="item.image" [alt]="item.title ? item.title : 'Menu image'" title="{{ item.title ? item.title : 'Menu image' }}">
                                                 </div>
                                                 <a [routerLink]="item.title">{{item.title}} </a>
                                                 <div class="btn-area1">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
 
-                            <button class="vl-menu-close" (click)="toggleMenu()">
+                            <button class="vl-menu-close" (click)="toggleMenu()" title="Close submenu" aria-label="Close submenu">
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </li>
@@ -104,7 +104,7 @@
                                         }
                                     </ul>
 
-                                    <button class="vl-menu-close" (click)="toggleSubMenu(subItem, $event)"><i
+                                    <button class="vl-menu-close" (click)="toggleSubMenu(subItem, $event)" aria-label="Close submenu"><i
                                             class="fas fa-chevron-right"></i></button>
                                     }@else{
                                     <a [href]="subItem.link">{{ subItem.title }}</a>
@@ -112,7 +112,7 @@
                                 </li>
                                 }
                             </ul>
-                            <button class="vl-menu-close" (click)="toggleSubMenu(item, $event)"><i
+                            <button class="vl-menu-close" (click)="toggleSubMenu(item, $event)" aria-label="Close submenu"><i
                                     class="fas fa-chevron-right"></i></button>
                             }
                         </li>
@@ -123,20 +123,20 @@
 
             <div class="space20"></div>
             <div class="vl-offcanvas-info">
-                <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
+                <h3 class="vl-offcanvas-sm-title">Ente em Contato</h3>
                 <div class="space20"></div>
-                <span><a href="javascript:void(0)"> <i class="fa-regular fa-envelope"></i> +57 9954 6476</a></span>
-                <span><a href="javascript:void(0)"><i class="fa-solid fa-phone"></i> hello&#64;exdos.com</a></span>
-                <span><a href="javascript:void(0)"><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a></span>
+                <span><a href="javascript:void(0)"> <i class="fa-regular fa-envelope"></i>(46) 3520-1500</a></span>
+                <span><a href="javascript:void(0)"><i class="fa-solid fa-phone"></i>contatobeltraonet.com.br</a></span>
+                <span><a href="javascript:void(0)"><i class="fa-solid fa-location-dot"></i>Rua Florianópolis, 433 - Alvorada
+Francisco Beltrão, Paraná</a></span>
             </div>
             <div class="space20"></div>
             <div class="vl-offcanvas-social">
-                <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+                <h3 class="vl-offcanvas-sm-title">Nós Siga</h3>
                 <div class="space20"></div>
-                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>             
                 <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-whatsapp"></i></a>
             </div>
 
         </div>
