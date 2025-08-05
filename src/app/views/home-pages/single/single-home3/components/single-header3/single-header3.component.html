@@ -1,28 +1,41 @@
 <header class="homepage3-body">
     <div id="vl-header-sticky" class="vl-header-area vl-transparent-header" stickyScroll>
         <div class="container headerfix">
-            <div class="row align-items-center row-bg">
+            <div class="row align-items-center row-bg">                
                 <div class="col-lg-2 col-md-6 col-6">
-                    <div class="vl-logo">
-                        <a routerLink="/home-1"><img src="assets/img/logo/logo2.png" alt="Logo navbar"></a>
+                    <div class="">
+                        <div class="vl-hero-btn d-none d-lg-block text-end">
+                            <a 
+                            routerLink="/home-1"><img 
+                            src="assets/img/logo/logo2.png" 
+                            alt="Logo navbar"                                                         
+                            />
+                            </a>
+                            
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7 d-none d-lg-block">
+                <div class="col-lg-8 d-none d-lg-block">
                     <div class="vl-main-menu text-center">
                         <nav class="vl-mobile-menu-active">
                             <app-single-nav-items [menuItems]="menuItems" />
                         </nav>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-2 col-md-6 col-6">
                     <div class="vl-hero-btn d-none d-lg-block text-end">
                         <span class="vl-btn-wrap text-end">
-                            <a href="https://www.beltraonet.com.br/ca/#/login" class="vl-btn4" target="_blank" rel="noopener" ><span class="demo">Acessar</span></a>   
+                            <a href="https://www.beltraonet.com.br/ca/#/login" 
+                            class="vl-btn4" 
+                            target="_blank" rel="noopener" ><span 
+                            class="demo">Acessar</span></a>   
                                                      
                         </span>
                     </div>
                     <div class="vl-header-action-item d-block d-lg-none">
-                        <button aria-label="button" type="button" class="vl-offcanvas-toggle" (click)="toggleMobileMenu()">
+                        <button aria-label="button" 
+                        type="button" 
+                        class="vl-offcanvas-toggle" (click)="toggleMobileMenu()">
                             <i class="fa-solid fa-bars-staggered"></i>
                         </button>
                     </div>

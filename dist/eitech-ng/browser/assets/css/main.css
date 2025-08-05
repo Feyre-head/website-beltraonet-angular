@@ -35,9 +35,10 @@ input, textarea {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   max-height: 100%;
 }
+
 
 .space6 {
   height: 6px;
@@ -7864,7 +7865,7 @@ Location:
   max-width: 1300px;
 }
 .homepage3-body .vl-transparent-header .vl-logo img {
-  width: 122px;
+  /* width: 122px; */
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
