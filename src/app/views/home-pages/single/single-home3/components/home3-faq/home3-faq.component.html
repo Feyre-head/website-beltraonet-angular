@@ -18,27 +18,17 @@
             </div>
 
             <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <div class="faq-accordion-area">
-                    <div ngbAccordion [closeOthers]="true" id="accordionExample">
-                        @for (faq of faqs; track $index;let isLast= $last;let isFirst=$first) {
-                        <div ngbAccordionItem [collapsed]="isFirst ? false : true">
-                            <h2 ngbAccordionHeader>
-                                <button ngbAccordionButton type="button">
-                                    {{faq.question}}
-                                </button>
-                            </h2>
-                            <!-- <div ngbAccordionCollapse>
-                                <div ngbAccordionBody>
-                                    <p>{{faq.answer}}</p>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div *ngIf="!isLast" class="space24"></div>
-                        }
-                    </div>
+            <div class="col-lg-3 m-auto">
+                <div class="" *ngFor="let faq of faqs">
+                    <a [href]="faq.link" target="_blank" rel="noopener" class="vl-btn2 btn-block mb-4 d-flex align-items-center justify-content-between">
+                        <span class="faq-title">{{ faq.titulo }}</span>
+                        <span class="faq-icon">
+
+                        </span>
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

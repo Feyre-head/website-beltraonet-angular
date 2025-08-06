@@ -3,7 +3,7 @@ import { AboutComponent } from './about/about.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ContactComponent } from './contact/contact.component';
-import { FaqComponent } from './faq/faq.component';
+import { Home3FaqComponent } from '../home-pages/single/single-home3/components/home3-faq/home3-faq.component'; 
 import { Error404Component } from './error-404/error-404.component';
 
 export const PAGES_ROUTES: Routes = [
@@ -29,7 +29,7 @@ export const PAGES_ROUTES: Routes = [
     },
     {
         path: 'pages/faq',
-        component: FaqComponent,
+        component: Home3FaqComponent,
         data: { title: "FAQs" }
     },
     {

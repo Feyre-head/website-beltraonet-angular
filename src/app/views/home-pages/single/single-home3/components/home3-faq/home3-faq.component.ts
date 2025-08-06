@@ -12,31 +12,31 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     styles: ``
 })
 export class Home3FaqComponent {
-    faqs: FaqType[] = [
-        {
-            question: 'Área do Cliente',
-            answer: 'Você pode contratar um plano diretamente pelo nosso site, WhatsApp, telefone ou visitando nossa loja física. Também temos consultores disponíveis para te ajudar a escolher o plano ideal.'
-        },
-        {
-            question: 'Comercial WhatsApp',
-            answer: 'Normalmente realizamos a instalação em até 48 horas úteis após a confirmação do pedido, dependendo da disponibilidade técnica na sua área.'
-        },       
-        {
-            question: 'Reclamações WhatsApp',
-            answer: 'O atendimento telefônico funciona todos os dias, das 8h às 20h beltraonet.com.br; fora desse período, você pode enviar e‑mail.'
-        },
-        {
-            question: 'Suporte Técnico WhatsApp',
-            answer: ''
-        },
-        {
-            question: 'Nossa página no Facebook',
-            answer: ''
-        },
-        {
-            question: 'Nossa página no Instagram',
-            answer: 'Sim. Os assinantes têm acesso à Área do Cliente no site da Beltraonet, onde é possível consultar boletos e acompanhar solicitações de suporte. Para isso, acesse o portal da empresa e faça login na Central do Assinante (se ainda não tiver cadastro, é necessário criar um).'
-        }
-    ];
-
+  faqs: { titulo: string; link: string }[] = [
+    {
+      titulo: 'Acesso',
+      link: 'https://www.beltraonet.com.br/ca/#/login',
+    },
+    {
+      titulo: '2ª Via Boleto',
+      link: 'https://www.google.com.br/maps/place/Beltr%C3%A3onet+Telecom/@-26.0738058,-53.0609373,17z/data=!3m1!4b1!4m6!3m5!1s0x94f072d0e395a143:0x9c0b2fd41aaaf22b!8m2!3d-26.0738106!4d-53.0583624!16s%2Fg%2F11dfh4h_np?entry=tts&g_ep=EgoyMDI1MDcyOS4wIPu8ASoASAFQAw%3D%3D&skid=bef30bec-87d7-43ec-9703-0f83d2d7c9fb',
+    }, 
+    {
+      titulo: 'Comercial',
+      link: 'https://api.whatsapp.com/send?phone=554635201501&text=Ol%C3%A1,%20preciso%20de%20ajuda.',
+    },
+    {
+      titulo: 'Suporte',
+      link: 'https://api.whatsapp.com/send?phone=5546999160043&text=Ol%C3%A1,%20preciso%20de%20ajuda.',
+    },
+    {
+      titulo: 'Reclamações',
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=contato@beltraonet.com.br&su=RECLAMAÇÃO_BELTRAONET&body=',
+    },
+    {
+      titulo: 'Onde Estamos',
+      link: 'https://www.google.com.br/maps/place/Beltr%C3%A3onet+Telecom/@-26.0738058,-53.0609373,17z/data=!3m1!4b1!4m6!3m5!1s0x94f072d0e395a143:0x9c0b2fd41aaaf22b!8m2!3d-26.0738106!4d-53.0583624!16s%2Fg%2F11dfh4h_np?entry=tts&g_ep=EgoyMDI1MDcyOS4wIPu8ASoASAFQAw%3D%3D&skid=bef30bec-87d7-43ec-9703-0f83d2d7c9fb',
+    }, 
+        
+  ];
 }
