@@ -35,21 +35,22 @@
           <div class="col-lg-3 col-md-6" *ngFor="let plan of plans" data-aos="flip-right" data-aos-duration="800">
             <div class="single-pricing-area">
               <div class="pricing-box">
-                <h3 class="text-center">{{ plan.name }}</h3>
+                <h3 class="text-center ">{{ plan.name }}</h3>
                 <div class="space14"></div>
-                <p class="text-center">Plano Residencial / Empresarial</p>
+                <p class="text-center"><small>Plano Residencial / Empresarial</small></p>
                 <div class="space12"></div>
-                <ul class="row" >
+                <ul class="row text-center">
                   <li>
-                    <img src="assets/img/icons/check6.svg" alt=""> {{ plan.downloadSpeed }}
+                     {{ plan.uploadSpeed }}
                   </li>
                   <li>
-                    <img src="assets/img/icons/check6.svg" alt=""> {{ plan.uploadSpeed }}
+                     {{ plan.downloadSpeed }}
                   </li>
-
+                  
                   <li *ngFor="let feature of plan.features">
-                    <img src="assets/img/icons/check6.svg" alt=""> {{ feature }}
+                     {{ feature }}
                   </li>
+                  
                 </ul>
                 <div class="space28"></div>
                 <!-- <h2>
