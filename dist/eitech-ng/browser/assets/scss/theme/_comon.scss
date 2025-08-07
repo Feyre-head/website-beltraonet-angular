@@ -486,7 +486,7 @@
     display: inline-block;
     padding: 18px 24px;
     border-radius: 8px;
-    color: #200079;
+    color: #2E0797;
     background: var(--ztc-bg-bg-1);
     z-index: 1;
     font-family: var(--ztc-family-font1);
@@ -497,7 +497,6 @@
     &:hover {
         color: var(--ztc-text-text-1);
         transition: all .4s;
-        background: #000000 !important;
         i {
             transform: rotate(0);
             transition: all .4s;

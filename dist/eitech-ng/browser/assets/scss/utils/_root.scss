@@ -3,7 +3,7 @@
 @use './typography'  as *;
 
 :root{
-     //Colors Declearations
+     //Colors Declarations
      @each $color, $shades in $colors {
           @each $shade, $value in $shades {
           --ztc-#{$color}-#{$shade}: #{$value};
