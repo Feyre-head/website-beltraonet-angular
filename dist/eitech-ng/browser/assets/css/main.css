@@ -446,7 +446,7 @@ img {
   --ztc-bg-bg-7: #032530;
   --ztc-bg-bg-8: #0E082B;
   --ztc-bg-bg-9: #0c17a3;
-  --ztc-bg-bg-10: linear-gradient(90deg, #202CD3 1.1%, #0778F9 100%);
+  --ztc-bg-bg-10: linear-gradient(90deg, #202CD3 1.1%, #0f23ff 100%);
   --ztc-bg-bg-11: #010225;
   --ztc-bg-bg-12: #4b72fb;
   --ztc-bg-bg-13: #010225;
@@ -660,7 +660,7 @@ Location:
 }
 
 .heading2 h5 {
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -695,7 +695,7 @@ Location:
   line-height: 28px;
   display: inline-block;
   transition: all 0.4s;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   border-radius: 50%;
   margin: 0 6px 0 0;
 }
@@ -1196,7 +1196,7 @@ Location:
   height: 100%;
   width: 10px;
   border-radius: 8px;
-  background: var(--Main-Color, linear-gradient(90deg, #726EFC 0%, #071597 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #0f23ff 0%, #071597 100%));
   transition: all 0.4s;
   top: 0;
   left: 50%;
@@ -1779,7 +1779,7 @@ Location:
   top: 0;
   transition: all 0.4s;
   border-radius: 8px 0px 0px 8px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 
 .about2-section-area {
@@ -2438,7 +2438,7 @@ Location:
   top: 0;
   transition: all 0.4s;
   border-radius: 8px 0px 0px 8px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 
 .about6-section-area-widget {
@@ -2602,7 +2602,7 @@ Location:
   transition: all 0.4s;
   left: 50%;
   border-radius: 16px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   visibility: hidden;
   opacity: 0;
   top: 0;
@@ -2616,7 +2616,7 @@ Location:
   border-radius: 50%;
   transition: all 0.4s;
   display: inline-block;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 .service1-section-area .service1-boxarea .arrow {
   position: absolute;
@@ -2677,7 +2677,7 @@ Location:
   left: 0;
   top: 6px;
   transition: all 0.4s;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 
 .service2-section-area {
@@ -3521,7 +3521,7 @@ Location:
   left: 0;
   top: 0;
   border-radius: 8px 0px 0px 8px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 .service-sidebar-area .service2-widget-sidebar .pera-box h4 {
   color: var(--Text-Color, #050734);
@@ -3533,7 +3533,7 @@ Location:
 }
 .service-sidebar-area .service2-widget-sidebar .faq-widget-area .accordion .accordion-item {
   border-radius: 8px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   border: none;
   border-radius: 8px;
 }
@@ -4531,7 +4531,7 @@ Location:
 
 .vl-offcanvas {
   position: fixed;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   width: 450px;
   z-index: 99;
   right: 0;
@@ -5424,7 +5424,7 @@ Location:
   line-height: 56px;
   border-radius: 50%;
   transition: all 0.4s;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   color: var(--ztc-text-text-1);
   display: inline-block;
   font-size: var(--ztc-font-size-font-s24);
@@ -6207,7 +6207,7 @@ Location:
   line-height: 56px;
   border-radius: 50%;
   transition: all 0.4s;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   color: var(--ztc-text-text-1);
   display: inline-block;
   font-size: var(--ztc-font-size-font-s24);
@@ -7019,7 +7019,7 @@ Location:
 }
 .vl-footer1-section-area .footer-logo1 ul li a:hover {
   border-radius: 165px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   transition: all 0.4s;
   color: var(--ztc-text-text-1);
 }
@@ -7579,7 +7579,7 @@ Location:
   transition: all 0.4s;
   left: 0;
   bottom: 0;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   z-index: 1;
 }
 .homepage1-body .vl-main-menu ul > li .sub-menu li a:hover::after {
@@ -8231,7 +8231,7 @@ Location:
 }
 .work1-section-area .solution-header .bg-progress .progress-inner {
   border-radius: 40px;
-  background: var(--Main-Color, linear-gradient(90deg, #151bbc 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #151bbc 0%, #0f23ff 100%));
   height: 100%;
   transition: width 0.4s ease;
 }
@@ -9451,7 +9451,7 @@ Location:
   border-radius: 50%;
   transition: all 0.4s;
   display: inline-block;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 .team1-section-area .team-author-boxarea ul {
   position: absolute;
@@ -9686,7 +9686,7 @@ Location:
   border-radius: 50%;
   transition: all 0.4s;
   display: inline-block;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 .teaminner-section-area .team-author-boxarea ul {
   position: absolute;
@@ -10259,7 +10259,7 @@ Location:
   border: none;
   outline: none;
   border-radius: 8px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
   color: var(--ztc-text-text-1);
   position: absolute;
   right: 10px;
@@ -11514,7 +11514,7 @@ Location:
   border-radius: 50%;
   height: 60px;
   width: 60px;
-  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #726EFC 100%));
+  background: var(--Main-Color, linear-gradient(90deg, #071597 0%, #0f23ff 100%));
 }
 .case1-section-area .case-works-section-area .others-widget-area .card-boxarea .content-area {
   background: #F2F4FF;
