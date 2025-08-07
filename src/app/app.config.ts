@@ -6,5 +6,10 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),{provide: CircleProgressOptions,},provideAnimations(),]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }), 
+    provideRouter(routes),{provide: CircleProgressOptions,},
+    provideAnimations(), 
+  ]
+  
 };

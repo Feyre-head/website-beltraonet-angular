@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PageHeaderComponent } from "@app/components/page-header/page-header.component";
 import { ServiceContentComponent } from "../components/service-content/service-content.component";
 import { ViewMoreServicesComponent } from "../components/view-more-services/view-more-services.component";
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-service-single',
@@ -10,5 +11,5 @@ import { ViewMoreServicesComponent } from "../components/view-more-services/view
   styles: ``
 })
 export class ServiceSingleComponent {
-
+ 
 }
