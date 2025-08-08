@@ -1,5 +1,5 @@
 {
-  "name": "eitech-ng",
+  "name": "beltraonet",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.2.8",
-    "@angular/cli": "^19.2.8",
+    "@angular/cli": "^18.0.7",
     "@angular/compiler-cli": "^19.2.0",
     "@types/aos": "^3.0.7",
     "@types/jasmine": "~5.1.0",
